@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "apiName": "getUsers",
+    "time": "2025-06-19T10:15:00Z",
+    "status": "200 OK",
+    "responseTime": "120ms"
+  },
+  {
+    "id": 2,
+    "apiName": "createUser",
+    "time": "2025-06-19T10:17:30Z",
+    "status": "201 Created",
+    "responseTime": "180ms"
+  },
+  {
+    "id": 3,
+    "apiName": "updateUser",
+    "time": "2025-06-19T10:20:45Z",
+    "status": "200 OK",
+    "responseTime": "210ms"
+  },
+  {
+    "id": 4,
+    "apiName": "deleteUser",
+    "time": "2025-06-19T10:22:10Z",
+    "status": "204 No Content",
+    "responseTime": "95ms"
+  },
+  {
+    "id": 5,
+    "apiName": "getUserById",
+    "time": "2025-06-19T10:25:55Z",
+    "status": "200 OK",
+    "responseTime": "150ms"
+  }
+]
