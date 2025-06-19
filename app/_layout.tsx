@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native';
 import 'react-native-reanimated';
 
 
@@ -18,12 +19,12 @@ export default function RootLayout() {
 
   return (
    <>
+   <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
    <StatusBar style="dark" />
     <Stack
      screenOptions={{
           headerShown: false,
-          contentStyle: { backgroundColor: "white" },
-          animation: "slide_from_right",
+          // contentStyle: { backgroundColor: "white" },
           header: () => null,
           navigationBarHidden: true,
         }}
@@ -31,6 +32,8 @@ export default function RootLayout() {
         <Stack.Screen name="index" options={{ headerShown: false }} />
        
       </Stack>
+      </SafeAreaView>
+     
       
    </>
      
