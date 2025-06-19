@@ -47,19 +47,14 @@ export default function HomePage() {
     fetchApiData();
   };
 
-  const getStatusColor = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'success':
-      case '200':
-        return '#22c55e';
-      case 'error':
-      case '500':
-      case '404':
-        return '#ef4444';
-      case 'pending':
-        return '#f59e0b';
-      default:
-        return '#6b7280';
+ const getStatusColor = (status: string) => {
+    const statusCode = status.split(' ')[0]; 
+    if (statusCode.startsWith('2')) {
+      return 'green'; 
+    } else if (statusCode.startsWith('4') || statusCode.startsWith('5')) {
+      return 'red'; 
+    } else {
+      return '#6b7280'; 
     }
   };
 

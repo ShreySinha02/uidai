@@ -26,7 +26,6 @@ export default function LoginPage() {
                         placeholder="Enter your email"
                         value={email}
                         onChangeText={setEmail}
-                        keyboardType="email-address"
                         autoCapitalize="none"
                     />
                     <TextInput
