@@ -7,6 +7,8 @@ export default function LoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    const welcometext="Welcome to\nDevbox Developer Portal"
+
     const handleLogin = () => {
         if (!email || !password) {
             Alert.alert("Error", "Please fill in all fields");
@@ -18,7 +20,7 @@ export default function LoginPage() {
     return (
         <View style={styles.container}>
             <View style={styles.loginBox}>
-                <Text style={styles.title}>Welcome Back</Text>
+                <Text style={styles.title}>{welcometext}</Text>
                 
                 <View style={styles.inputContainer}>
                     <TextInput
